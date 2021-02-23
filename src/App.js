@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Convertar seus arquivos .ddl gerados automaticamente pelo Oracle Data Modeler para o padão Mariangela</h1>
+      <h1>Converta seus arquivos .ddl gerados automaticamente pelo Oracle Data Modeler para o padão Mariangela</h1>
       <form onSubmit={handleSubmit} onChange={handleChange}>
         <textarea placeholder="cole seu codigo aqui" required>
         </textarea>
@@ -32,6 +32,9 @@ function App() {
           </pre>
         {/* </textarea> */}
       </form>
+      <a className="view-in-github" href="https://github.com/kel-lorran/convert_to_mariangela_rule">
+        View ON GitHub
+      </a>
     </div>
   );
 }

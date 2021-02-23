@@ -20,3 +20,29 @@ pre {
   background: #f7f7f7;
   padding: 6px;
 }
+
+.view-in-github {
+  display: inline-block;
+  position: fixed;
+  top: 36px;
+  right: -13px;
+  padding: 16px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  transform: rotate(45deg);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.view-in-github:after {
+  content: '';
+  position: absolute;
+  height: 30px;
+  border: 114px solid transparent;
+  border-bottom: 114px solid #1f1f1f;
+  top: -211px;
+  left: -27px;
+  z-index: -1;
+}
