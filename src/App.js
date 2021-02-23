@@ -9,10 +9,14 @@ function App() {
 
   const handleChange = ({ target: {value}}) => setContentToConvert(value);
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
-    const doc = new Doc(contentToConvert)
-    setContentConverted(doc.convert())
+    try {
+      const doc = new Doc(contentToConvert)
+      setContentConverted(doc.convert())
+    } catch(error) {
+      window.alert('Documento inserido não corresponde com a formatação de saída do Data Modeler esperada')
+    }
   } 
 
   return (

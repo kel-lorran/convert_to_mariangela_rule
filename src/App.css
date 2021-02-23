@@ -12,4 +12,11 @@ textarea {
   width: 100%;
   min-height: 200px;
   margin: 20px 0 40px;
+  padding: 6px;
+}
+
+pre {
+  text-align: left;
+  background: #f7f7f7;
+  padding: 6px;
 }
